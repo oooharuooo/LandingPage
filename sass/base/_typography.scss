@@ -1,3 +1,18 @@
 body {
-	background-color: #E5E5E5
+	background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+	li {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		color: $bigFontColor;
+	}
+	h1,
+	h2,
+	h3 {
+		color: $bigFontColor;
+	}
+	p {
+		color: $paragraphColor;
+	}
 }

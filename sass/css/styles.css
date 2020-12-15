@@ -312,8 +312,91 @@ template {
   display: none; }
 
 body {
-  background-color: #E5E5E5; }
+  background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%); }
+  body li {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    color: #212353; }
+  body h1,
+  body h2,
+  body h3 {
+    color: #212353; }
+  body p {
+    color: #4B5D68; }
 
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem; }
+  .header .logo {
+    place-self: center; }
+  .header .navbar {
+    flex-basis: 100%;
+    text-align: right; }
+    .header .navbar ul {
+      display: flex;
+      place-content: space-evenly; }
+    .header .navbar div {
+      text-align-last: center; }
+      .header .navbar div button {
+        height: 30px;
+        width: 150px;
+        color: #212353;
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+        border-radius: 50px;
+        font-weight: 900; }
+
+.main-content {
+  display: grid;
+  row-gap: 2.5rem;
+  text-align: center; }
+  .main-content .first-section {
+    background-color: whitesmoke; }
+    .main-content .first-section button {
+      background-color: #9c69e2;
+      border-radius: 50px;
+      color: white;
+      margin-bottom: 2rem;
+      height: 40px;
+      width: 120px; }
+  .main-content .second-section {
+    background-color: rgba(240, 99, 184, 0.15);
+    border-radius: 50px; }
+  .main-content .features-section {
+    background-color: whitesmoke; }
+    .main-content .features-section-container {
+      display: flex;
+      flex-direction: column; }
+      .main-content .features-section-container-jobs {
+        background: #68c9ba;
+        margin-bottom: 0.5rem;
+        border-radius: 25px; }
+        .main-content .features-section-container-jobs a {
+          color: #212353; }
+
+footer {
+  background-color: whitesmoke;
+  text-align: center;
+  margin-top: 2.5rem; }
+
+.demo {
+  margin-bottom: 5rem; }
+  .demo-button :first-child {
+    color: white;
+    width: 150px;
+    height: 30px;
+    background-color: #f063b8;
+    border-radius: 50px; }
+  .demo-button :last-child {
+    width: 150px;
+    height: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px; }
+
+.contact-links {
+  display: flex; }

@@ -1,0 +1,28 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3rem;
+	.logo {
+		place-self: center;
+	}
+
+	.navbar {
+		flex-basis: 100%;
+		text-align: right;
+
+		ul {
+			display: flex;
+			place-content: space-evenly;
+		}
+		div {
+			text-align-last: center;
+			button {
+				@include heightAndWidth(30px, 150px);
+				color: $bigFontColor;
+				box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+				border-radius: 50px;
+				font-weight: 900;
+			}
+		}
+	}
+}

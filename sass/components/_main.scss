@@ -1,0 +1,39 @@
+.main-content {
+	display: grid;
+	row-gap: 2.5rem;
+	text-align: center;
+
+	.first-section {
+		background-color: whitesmoke;
+
+		button {
+			background-color: #9c69e2;
+			border-radius: 50px;
+			color: white;
+			margin-bottom: 2rem;
+			@include heightAndWidth(40px, 120px);
+		}
+	}
+
+	.second-section {
+		background-color: rgba(240, 99, 184, 0.15);
+		border-radius: 50px;
+	}
+
+	.features-section {
+		background-color: whitesmoke;
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			&-jobs {
+				background: #68c9ba;
+				margin-bottom: 0.5rem;
+				border-radius: 25px;
+				a {
+					color: $bigFontColor;
+				}
+			}
+		}
+	}
+}
