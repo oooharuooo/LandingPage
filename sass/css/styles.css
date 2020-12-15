@@ -312,7 +312,8 @@ template {
   display: none; }
 
 body {
-  background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%); }
+  background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  padding: 0 10px; }
   body li {
     list-style: none; }
   body a {
@@ -325,21 +326,28 @@ body {
   body p {
     color: #4B5D68; }
 
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
 .header {
   display: flex;
   flex-direction: row;
+  margin-top: 3rem;
   margin-bottom: 3rem; }
   .header .logo {
-    place-self: center; }
+    flex-basis: 20%;
+    place-self: center;
+    text-align: center; }
   .header .navbar {
-    flex-basis: 100%;
-    text-align: right; }
+    flex-basis: 80%; }
     .header .navbar ul {
       display: flex;
-      place-content: space-evenly; }
+      place-content: space-evenly;
+      padding: 0; }
     .header .navbar div {
       text-align-last: center; }
       .header .navbar div button {
@@ -382,21 +390,27 @@ footer {
   background-color: whitesmoke;
   text-align: center;
   margin-top: 2.5rem; }
-
-.demo {
-  margin-bottom: 5rem; }
-  .demo-button :first-child {
-    color: white;
-    width: 150px;
-    height: 30px;
-    background-color: #f063b8;
-    border-radius: 50px; }
-  .demo-button :last-child {
-    width: 150px;
-    height: 30px;
-    background-color: #ffffff;
-    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-    border-radius: 50px; }
-
-.contact-links {
-  display: flex; }
+  footer .demo {
+    margin-bottom: 5rem; }
+    footer .demo-button :first-child {
+      color: white;
+      height: 30px;
+      width: 130px;
+      background-color: #f063b8;
+      border-radius: 50px; }
+    footer .demo-button :last-child {
+      height: 30px;
+      width: 130px;
+      background-color: #ffffff;
+      box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+      border-radius: 50px; }
+  footer .contact-address-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer .contact-address-logo h2 {
+      flex-basis: 65%; }
+  footer .contact .contact-links {
+    display: flex; }
+    footer .contact .contact-links-about ul {
+      padding-left: 10px; }

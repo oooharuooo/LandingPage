@@ -1,5 +1,6 @@
 body {
 	background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+	padding: 0 10px;
 	li {
 		list-style: none;
 	}
@@ -15,4 +16,9 @@ body {
 	p {
 		color: $paragraphColor;
 	}
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
 }

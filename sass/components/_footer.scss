@@ -2,29 +2,43 @@ footer {
 	background-color: whitesmoke;
 	text-align: center;
 	margin-top: 2.5rem;
-}
-.demo {
-	margin-bottom: 5rem;
-	&-button {
-		:first-child {
-			color: white;
-			width: 150px;
-			height: 30px;
-			background-color: #f063b8;
-			border-radius: 50px;
+
+	.demo {
+		margin-bottom: 5rem;
+		&-button {
+			:first-child {
+				color: white;
+				@include heightAndWidth(30px, 130px);
+				background-color: #f063b8;
+				border-radius: 50px;
+			}
+			:last-child {
+				@include heightAndWidth(30px, 130px);
+				background-color: #ffffff;
+				box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+				border-radius: 50px;
+			}
 		}
-		:last-child {
-			width: 150px;
-			height: 30px;
-			background-color: #ffffff;
-			box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-            border-radius: 50px;
-            
+	}
+
+	.contact {
+		&-address-logo {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			h2 {
+				flex-basis: 65%;
+			}
+		}
+		.contact-links {
+			display: flex;
+
+			&-about {
+				ul {
+					padding-left: 10px;
+				}
+			}
 		}
 	}
 }
-
-.contact-links {
-    display:flex;
-}
-

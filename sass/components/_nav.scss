@@ -1,18 +1,21 @@
 .header {
 	display: flex;
 	flex-direction: row;
+	margin-top: 3rem;
 	margin-bottom: 3rem;
 	.logo {
+		flex-basis: 20%;
 		place-self: center;
+		text-align: center;
 	}
 
 	.navbar {
-		flex-basis: 100%;
-		text-align: right;
+		flex-basis: 80%;
 
 		ul {
 			display: flex;
 			place-content: space-evenly;
+			padding: 0;
 		}
 		div {
 			text-align-last: center;
