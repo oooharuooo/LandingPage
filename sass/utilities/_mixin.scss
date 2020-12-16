@@ -11,5 +11,6 @@
 
 @mixin secondSectionBackground($number) {
 	background: url("../../img/container" + $number + ".svg") no-repeat;
-	background-size: cover;
+	background-position: center center;
+	margin-bottom: 1rem;
 }
