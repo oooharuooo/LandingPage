@@ -13,8 +13,11 @@ body {
 	h3 {
 		color: $bigFontColor;
 	}
+	
 	p {
 		color: $paragraphColor;
+		font-size: 18px;
+		line-height: 160%;
 	}
 }
 

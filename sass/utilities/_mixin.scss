@@ -2,3 +2,14 @@
 	height: $height;
 	width: $width;
 }
+
+@mixin flexCenter($flex-direction) {
+	display: flex;
+	flex-direction: $flex-direction;
+	place-items: center;
+}
+
+@mixin secondSectionBackground($number) {
+	background: url("../../img/container" + $number + ".svg") no-repeat;
+	background-size: cover;
+}

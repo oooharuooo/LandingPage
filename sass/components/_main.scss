@@ -4,8 +4,6 @@
 	text-align: center;
 
 	.first-section {
-		background-color: whitesmoke;
-
 		button {
 			background-color: #9c69e2;
 			border-radius: 50px;
@@ -21,17 +19,85 @@
 	}
 
 	.features-section {
-		background-color: whitesmoke;
-
 		&-container {
 			display: flex;
 			flex-direction: column;
+			.background-1 {
+				@include secondSectionBackground(1);
+			}
+			.background-2 {
+				@include secondSectionBackground(2);
+			}
+			.background-3 {
+				@include secondSectionBackground(3);
+			}
+			.background-4 {
+				@include secondSectionBackground(4);
+			}
 			&-jobs {
-				background: #68c9ba;
-				margin-bottom: 0.5rem;
-				border-radius: 25px;
-				a {
-					color: $bigFontColor;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+
+/* TABLET DISPLAY */
+
+@media (min-width: 768px) {
+	.main-content {
+		text-align: left;
+
+		.first-section {
+			@include flexCenter(row-reverse);
+
+			&-image {
+				flex-basis: 60%;
+			}
+			&-content {
+				flex-basis: 40%;
+				button {
+					@include heightAndWidth(40px, 200px);
+				}
+			}
+		}
+		.second-section {
+			@include flexCenter(row);
+			&-image {
+				flex-basis: 40%;
+			}
+			&-content {
+				flex-basis: 60%;
+			}
+		}
+
+		.features-section {
+			@include flexCenter(column);
+
+			&-intro {
+				@include flexCenter(column);
+				text-align: center;
+				p {
+					width:60%
+				}
+			}
+			&-container {
+				@include flexCenter(row);
+				place-items: unset;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 50px;
+
+				.background-1 {
+					flex-basis: 40%;
+				}
+				.background-2 {
+					flex-basis: 40%;
+				}
+				.background-3 {
+					flex-basis: 40%;
+				}
+				.background-4 {
+					flex-basis: 40%;
 				}
 			}
 		}
