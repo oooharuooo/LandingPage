@@ -18,21 +18,13 @@
 		}
 		div {
 			text-align-last: center;
-			button {
-				@include heightAndWidth(30px, 150px);
-				color: $bigFontColor;
-				background-color: #fff;
-				box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-				border-radius: 50px;
-				font-weight: 900;
-			}
+			
 		}
 	}
 }
 
 @media (min-width: 768px) {
 	body {
-		padding: 0 6rem;
 		.header {
 			.navbar {
 				@include flexCenter(row);

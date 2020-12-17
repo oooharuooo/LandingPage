@@ -3,39 +3,18 @@
 	row-gap: 2.5rem;
 	text-align: center;
 
-	.first-section {
-		button {
-			background-color: #9c69e2;
-			border-radius: 50px;
-			color: white;
-			margin-bottom: 2rem;
-			@include heightAndWidth(40px, 120px);
-		}
-	}
-
 	.second-section {
 		background-color: rgba(240, 99, 184, 0.15);
 		border-radius: 50px;
 	}
-
 	.features-section {
 		&-container {
-			display: flex;
-			flex-direction: column;
+			@include flexCenter(column);
+			row-gap: 2rem;
+			column-gap: 10%;
+
 			.border-25 {
 				border-radius: 25px;
-			}
-			.background-1 {
-				@include secondSectionBackground(1);
-			}
-			.background-2 {
-				@include secondSectionBackground(2);
-			}
-			.background-3 {
-				@include secondSectionBackground(3);
-			}
-			.background-4 {
-				@include secondSectionBackground(4);
 			}
 			a {
 				font-weight: 900;
@@ -44,12 +23,13 @@
 	}
 }
 
-/* TABLET DISPLAY */
+.padding-bot {
+	padding-bottom: 2.5rem;
+}
+/* MEDIUM DISPLAY */
 
 @media (min-width: 768px) {
 	.main-content {
-		text-align: left;
-
 		.first-section {
 			@include flexCenter(row-reverse);
 
@@ -74,11 +54,8 @@
 		}
 
 		.features-section {
-			@include flexCenter(column);
-
 			&-intro {
 				@include flexCenter(column);
-				text-align: center;
 				p {
 					width: 60%;
 				}
@@ -88,28 +65,16 @@
 				place-items: unset;
 				flex-wrap: wrap;
 				justify-content: center;
-				gap: 50px;
 
-				.background-1 {
-					flex-basis: 40%;
-				}
-				.background-2 {
-					flex-basis: 40%;
-				}
-				.background-3 {
-					flex-basis: 40%;
-				}
-				.background-4 {
-					flex-basis: 40%;
+				.flex-container {
+					flex-basis: 45%;
+					position: relative;
 				}
 				&-jobs {
 					@include flexCenter(column);
 					place-items: unset;
 					height: 100%;
 					place-content: space-between;
-					a {
-						padding-bottom: 2.5rem;
-					}
 				}
 			}
 		}
@@ -138,6 +103,23 @@
 
 				img {
 					border-radius: 25px;
+				}
+			}
+		}
+	}
+}
+
+// LARGE DISPLAY
+@media (min-width: 1024px) {
+	.main-content {
+		.features-section {
+			&-container {
+				&-jobs {
+					height: 20rem;
+					text-align: start;
+					place-content: center;
+					padding-left: 7rem;
+					padding-right: 1rem;
 				}
 			}
 		}

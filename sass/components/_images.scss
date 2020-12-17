@@ -1,0 +1,32 @@
+.flex-container {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.background-1 {
+	@include backgroundGenerated(1, 1);
+}
+.background-2 {
+	@include backgroundGenerated(2, 2);
+}
+.background-3 {
+	@include backgroundGenerated(3, 3);
+}
+.background-4 {
+	@include backgroundGenerated(4, 4);
+}
+
+// Display on small-screen
+.displayImg {
+	display: none;
+}
+
+/* Big-screen */
+@media (min-width: 1024px) {
+    .displayImg {
+        display: block;
+        position: absolute;
+    }
+	.flex-container {
+		background-position: unset;
+	}
+}

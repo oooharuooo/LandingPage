@@ -1,0 +1,15 @@
+.btn-request {
+	@include heightAndWidth(30px, 150px);
+	@include buttonGenerated(#fff, $bigFontColor);
+}
+.btn-learnMore {
+	@include heightAndWidth(50px, 200px);
+	@include buttonGenerated(#9c69e2, #fff);
+	margin-bottom: 2rem;
+}
+
+.footer-learnMore {
+	margin-bottom: 0;
+	@include heightAndWidth(30px, 100px);
+	background-color: #f063b8;
+}

@@ -9,8 +9,14 @@
 	place-items: center;
 }
 
-@mixin secondSectionBackground($number) {
-	background: url("../../img/container" + $number + ".svg") no-repeat;
-	background-position: center center;
-	margin-bottom: 1rem;
+@mixin buttonGenerated($background-color, $color) {
+	background-color: $background-color;
+	color: $color;
+	border-radius: 50px;
+	box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+	font-weight: 900;
+}
+
+@mixin backgroundGenerated($folderNumber,$imgNumber) {
+	background-image: url("../.././img/background-img/container" + $folderNumber + "/container" + $imgNumber + ".svg");
 }
