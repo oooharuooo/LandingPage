@@ -34,7 +34,7 @@
 @media (min-width: 768px) {
 	.main-content {
 		.first-section {
-			@include flexCenter(row);
+			@include flexCenter(row-reverse);
 
 			&-image {
 				flex-basis: 60%;
@@ -61,6 +61,7 @@
 				@include flexCenter(column);
 				p {
 					width: 60%;
+					text-align: center;
 				}
 			}
 			&-container {
@@ -118,6 +119,7 @@
 		.main-content {
 			text-align: start;
 			.first-section {
+				flex-direction: row;
 				&-content {
 					flex-basis: 41%;
 				}
@@ -137,6 +139,47 @@
 						padding-right: 1rem;
 						z-index: 2;
 						position: relative;
+					}
+				}
+			}
+			aside {
+				.profile-container {
+					flex-wrap: wrap;
+					.profile-1 {
+						flex-basis: 60%;
+					}
+					.profile-2 {
+						flex-basis: 34%;
+					}
+					.displayImg {
+						position: unset;
+					}
+					.function-container {
+						@include flexCenter(row);
+						justify-content: space-between;
+						flex-basis: 95%;
+
+						&-dot {
+							@include flexCenter(row);
+							font-size: 3rem;
+							color: #fff;
+							span {
+								font-size: 5rem;
+								color: #f063b8;
+							}
+						}
+
+						&-arrow {
+							.arrow-button {
+								font-size: 3rem;
+								background-color: #aa7ee6;
+								border: none;
+								color: #fff;
+							}
+							.next {
+								opacity: 0.3;
+							}
+						}
 					}
 				}
 			}

@@ -48,3 +48,10 @@
 		background-position: bottom 10% right 5%, top left, 0%;
 	}
 }
+
+/* Extra Large */
+@media (min-width: 1440px) {
+	.displayImg {
+		right: 75%;
+	}
+}
