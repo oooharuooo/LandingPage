@@ -10,11 +10,6 @@
 			display: flex;
 			place-content: space-evenly;
 			padding: 0;
-
-			.active {
-				font-weight: bold;
-				transform: translateY(-1px);
-			}
 		}
 		div {
 			text-align-last: center;

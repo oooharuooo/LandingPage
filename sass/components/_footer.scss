@@ -7,9 +7,9 @@ footer {
 	}
 
 	.contact {
+		justify-content: center;
 		&-address-logo {
-			display: flex;
-			flex-direction: row;
+			@include flexCenter(row);
 			justify-content: space-evenly;
 			h2 {
 				flex-basis: 65%;
@@ -17,6 +17,7 @@ footer {
 		}
 		.contact-links {
 			display: flex;
+			justify-content: center;
 			&-ul {
 				text-align: center;
 				@include flexCenter(column);

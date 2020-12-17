@@ -1,3 +1,9 @@
+a:hover,
+button:hover {
+	font-weight: bold;
+	transform: translateY(-10px);
+	transition: transform 0.5s;
+}
 .btn-request {
 	@include heightAndWidth(30px, 150px);
 	@include buttonGenerated(#fff, $bigFontColor);
@@ -9,8 +15,8 @@
 }
 
 .footer-learnMore {
-	margin-bottom: 0;
 	@include heightAndWidth(30px, 100px);
+	margin-bottom: 0;
 	background-color: #f063b8;
 }
 

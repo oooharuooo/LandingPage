@@ -3,22 +3,16 @@
 	background-repeat: no-repeat;
 }
 .background-1 {
-	background-image: url("../.././img/background-img/container1/ellipse1-1.svg"),
-		url("../.././img/background-img/container1/ellipse1.svg"),
-		url("../.././img/background-img/container1/container1.svg");
+	@include backgroundGenerated(1, ellipse1-1, ellipse1, container1);
 }
 .background-2 {
-	background-image: url("../.././img/background-img/container2/ellipse2.svg"),
-		url("../.././img/background-img/container2/container2.svg");
+	@include backgroundGenerated(2, none, ellipse2, container2);
 }
 .background-3 {
-	background-image: url("../.././img/background-img/container3/ellipse3.svg"),
-		url("../.././img/background-img/container3/container3.svg");
+	@include backgroundGenerated(3, ellipse3, none, container3);
 }
 .background-4 {
-	background-image: url("../.././img/background-img/container4/ellipse4-1.svg"),
-		url("../.././img/background-img/container4/ellipse4.svg"),
-		url("../.././img/background-img/container4/container4.svg");
+	@include backgroundGenerated(4, ellipse4-1, ellipse4, container4);
 }
 
 // Display none on small-screen

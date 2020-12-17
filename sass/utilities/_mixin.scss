@@ -17,6 +17,13 @@
 	font-weight: 900;
 }
 
-@mixin backgroundGenerated($folderNumber,$imgNumber) {
-	background-image: url("../.././img/background-img/container" + $folderNumber +"/container"+ $imgNumber + ".svg");
+@mixin backgroundGenerated($folderNumber, $ellipse2, $ellipse1, $imgContainer) {
+	background-image: url("../.././img/background-img/container" + $folderNumber + "/" + $ellipse2 + ".svg"),
+		url("../.././img/background-img/container" + $folderNumber + "/" + $ellipse1 + ".svg"),
+		url("../.././img/background-img/container" + $folderNumber + "/" + $imgContainer + ".svg");
 }
+
+//
+/* 	background-image: url("../.././img/background-img/container1/ellipse1-1.svg"),
+		url("../.././img/background-img/container1/ellipse1.svg"),
+		url("../.././img/background-img/container1/container1.svg"); */
