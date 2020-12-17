@@ -13,3 +13,12 @@
 	@include heightAndWidth(30px, 100px);
 	background-color: #f063b8;
 }
+
+@media (min-width: 1024px) {
+	.footer-learnMore {
+		@include heightAndWidth(60px, 170px);
+	}
+	.btn-request {
+		@include heightAndWidth(60px, 210px);
+	}
+}

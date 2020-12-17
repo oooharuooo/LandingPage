@@ -4,7 +4,6 @@ footer {
 
 	.demo {
 		margin-bottom: 5rem;
-		
 	}
 
 	.contact {
@@ -32,6 +31,7 @@ footer {
 	}
 }
 
+// Medium Screen
 @media (min-width: 768px) {
 	footer {
 		text-align: left;
@@ -39,10 +39,10 @@ footer {
 			@include flexCenter(row);
 
 			&-content {
-				flex-basis: 40%;
+				flex-basis: 50%;
 			}
 			&-button {
-				flex-basis: 60%;
+				flex-basis: 50%;
 				display: flex;
 				justify-content: space-evenly;
 			}
@@ -50,6 +50,22 @@ footer {
 
 		.contact {
 			@include flexCenter(row);
+		}
+	}
+}
+
+// Large Screen
+@media (min-width: 1024px) {
+	footer {
+		.contact {
+			justify-content: space-between;
+			ul {
+				@include flexCenter(row);
+				flex-wrap: wrap;
+				:first-child {
+					flex-basis: 100%;
+				}
+			}
 		}
 	}
 }

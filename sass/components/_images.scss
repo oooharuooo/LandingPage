@@ -21,7 +21,7 @@
 		url("../.././img/background-img/container4/container4.svg");
 }
 
-// Display on small-screen
+// Display none on small-screen
 .displayImg {
 	display: none;
 }
@@ -36,15 +36,15 @@
 	}
 
 	.adjustEllipsed-1 {
-		background-position: 60%;
+		background-position: top 10% right 35%, top -20% right 10%, 0%;
 	}
 	.adjustEllipsed-2 {
-		background-position: 60%;
+		background-position: bottom right, 0%;
 	}
 	.adjustEllipsed-3 {
-		background-position: 60%;
+		background-position: top 5% right 10%, 0%;
 	}
 	.adjustEllipsed-4 {
-		background-position: 60%;
+		background-position: bottom 10% right 5%, top left, 0%;
 	}
 }

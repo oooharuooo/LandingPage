@@ -338,6 +338,12 @@ img {
     body h1 {
       font-size: 4rem; } }
 
+@media (min-width: 1440px) {
+  body {
+    padding: 0 8rem; }
+    body h3 {
+      font-size: 2rem; } }
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
@@ -397,6 +403,14 @@ img {
   width: 100px;
   background-color: #f063b8; }
 
+@media (min-width: 1024px) {
+  .footer-learnMore {
+    height: 60px;
+    width: 170px; }
+  .btn-request {
+    height: 60px;
+    width: 210px; } }
+
 .flex-container {
   background-position: center;
   background-repeat: no-repeat; }
@@ -424,13 +438,13 @@ img {
     top: 30%;
     right: 65%; }
   .adjustEllipsed-1 {
-    background-position: 60%; }
+    background-position: top 10% right 35%, top -20% right 10%, 0%; }
   .adjustEllipsed-2 {
-    background-position: 60%; }
+    background-position: bottom right, 0%; }
   .adjustEllipsed-3 {
-    background-position: 60%; }
+    background-position: top 5% right 10%, 0%; }
   .adjustEllipsed-4 {
-    background-position: 60%; } }
+    background-position: bottom 10% right 5%, top left, 0%; } }
 
 .main-content {
   display: grid;
@@ -528,7 +542,7 @@ img {
       flex-basis: 41%; }
     body .main-content .first-section-image {
       position: absolute;
-      width: 60%;
+      width: 55%;
       left: 40%; }
     body .main-content .features-section-container-jobs {
       height: 20rem;
@@ -569,12 +583,23 @@ footer {
       flex-direction: row;
       place-items: center; }
       footer .demo-content {
-        flex-basis: 40%; }
+        flex-basis: 50%; }
       footer .demo-button {
-        flex-basis: 60%;
+        flex-basis: 50%;
         display: flex;
         justify-content: space-evenly; }
     footer .contact {
       display: flex;
       flex-direction: row;
       place-items: center; } }
+
+@media (min-width: 1024px) {
+  footer .contact {
+    justify-content: space-between; }
+    footer .contact ul {
+      display: flex;
+      flex-direction: row;
+      place-items: center;
+      flex-wrap: wrap; }
+      footer .contact ul :first-child {
+        flex-basis: 100%; } }

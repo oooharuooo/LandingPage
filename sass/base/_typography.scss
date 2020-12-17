@@ -13,7 +13,7 @@ body {
 	h3 {
 		color: $bigFontColor;
 	}
-	
+
 	p {
 		color: $paragraphColor;
 		font-size: 18px;
@@ -26,12 +26,21 @@ img {
 	max-height: 100%;
 }
 
-
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
 	body {
 		text-align: start;
+
 		h1 {
 			font-size: 4rem;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	body {
+		padding: 0 8rem;
+		h3 {
+			font-size: 2rem;
 		}
 	}
 }
