@@ -3,16 +3,22 @@
 	background-repeat: no-repeat;
 }
 .background-1 {
-	@include backgroundGenerated(1, 1);
+	background-image: url("../.././img/background-img/container1/ellipse1-1.svg"),
+		url("../.././img/background-img/container1/ellipse1.svg"),
+		url("../.././img/background-img/container1/container1.svg");
 }
 .background-2 {
-	@include backgroundGenerated(2, 2);
+	background-image: url("../.././img/background-img/container2/ellipse2.svg"),
+		url("../.././img/background-img/container2/container2.svg");
 }
 .background-3 {
-	@include backgroundGenerated(3, 3);
+	background-image: url("../.././img/background-img/container3/ellipse3.svg"),
+		url("../.././img/background-img/container3/container3.svg");
 }
 .background-4 {
-	@include backgroundGenerated(4, 4);
+	background-image: url("../.././img/background-img/container4/ellipse4-1.svg"),
+		url("../.././img/background-img/container4/ellipse4.svg"),
+		url("../.././img/background-img/container4/container4.svg");
 }
 
 // Display on small-screen
@@ -22,11 +28,23 @@
 
 /* Big-screen */
 @media (min-width: 1024px) {
-    .displayImg {
-        display: block;
-        position: absolute;
-    }
-	.flex-container {
-		background-position: unset;
+	.displayImg {
+		display: block;
+		position: absolute;
+		top: 30%;
+		right: 65%;
+	}
+
+	.adjustEllipsed-1 {
+		background-position: 60%;
+	}
+	.adjustEllipsed-2 {
+		background-position: 60%;
+	}
+	.adjustEllipsed-3 {
+		background-position: 60%;
+	}
+	.adjustEllipsed-4 {
+		background-position: 60%;
 	}
 }

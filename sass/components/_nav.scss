@@ -29,10 +29,10 @@
 			.navbar {
 				@include flexCenter(row);
 				ul {
-					flex-basis: 60%;
+					flex-basis: 50%;
 				}
 				div {
-					flex-basis: 40%;
+					flex-basis: 50%;
 					button {
 						@include heightAndWidth(40px, 200px);
 					}

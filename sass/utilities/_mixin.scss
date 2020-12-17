@@ -18,5 +18,5 @@
 }
 
 @mixin backgroundGenerated($folderNumber,$imgNumber) {
-	background-image: url("../.././img/background-img/container" + $folderNumber + "/container" + $imgNumber + ".svg");
+	background-image: url("../.././img/background-img/container" + $folderNumber +"/container"+ $imgNumber + ".svg");
 }
